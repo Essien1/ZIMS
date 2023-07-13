@@ -49,8 +49,8 @@ const NormalTicket = () => {
               <td className="text-md px-6 py-3">NGN</td>
             </tr>
             <tr className="border-b border-gray-300 items-center">
-              <td className="text-md px-6 py-3">23w430998</td>
-              <td className="text-md px-6 py-3">Micheal Mark </td>
+              <td className="text-md px-6 py-3">23430998</td>
+              <td className="text-md px-6 py-3">Lawal Timilehin </td>
               <td className="text-md px-6 py-3">Weekday Foreigner Adult</td>
               <td className="text-md px-6 py-3">$30</td>
               <td className="text-md px-6 py-3">USD</td>
@@ -58,6 +58,27 @@ const NormalTicket = () => {
             <tr className="border-b border-gray-300 items-center">
               <td className="text-md px-6 py-3">54430998</td>
               <td className="text-md px-6 py-3">HUMPHREYNWOKOLO</td>
+              <td className="text-md px-6 py-3">Weekday normal Adult</td>
+              <td className="text-md px-6 py-3">₦3500</td>
+              <td className="text-md px-6 py-3">NGN</td>
+            </tr>
+            <tr className="border-b border-gray-300 items-center">
+              <td className="text-md px-6 py-3">66430998</td>
+              <td className="text-md px-6 py-3">Faith Odidi</td>
+              <td className="text-md px-6 py-3">Weekday normal Adult</td>
+              <td className="text-md px-6 py-3">$10</td>
+              <td className="text-md px-6 py-3">USD</td>
+            </tr>  
+            <tr className="border-b border-gray-300 items-center">
+              <td className="text-md px-6 py-3">53430998</td>
+              <td className="text-md px-6 py-3">Stephen Toka</td>
+              <td className="text-md px-6 py-3">Weekday normal Adult</td>
+              <td className="text-md px-6 py-3">₦3500</td>
+              <td className="text-md px-6 py-3">NGN</td>
+            </tr>
+            <tr className="border-b border-gray-300 items-center">
+              <td className="text-md px-6 py-3">99330998</td>
+              <td className="text-md px-6 py-3">Iyare Gbemiga</td>
               <td className="text-md px-6 py-3">Weekday normal Adult</td>
               <td className="text-md px-6 py-3">₦3500</td>
               <td className="text-md px-6 py-3">NGN</td>

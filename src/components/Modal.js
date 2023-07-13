@@ -62,11 +62,11 @@ const date=new Date()
 
   const configNaira = {
     //LiVE KEY
-    // public_key: `${process.env.REACT_APP_PUBLICKEY}`,
+    public_key: `${process.env.REACT_APP_PUBLICKEY}`,
 
 
     //Test Key
-    public_key: `FLWPUBK_TEST-841c10b026f35195c62cfc032d14c5a0-X`,
+    // public_key: `FLWPUBK_TEST-841c10b026f35195c62cfc032d14c5a0-X`,
     tx_ref: Date.now(),
     amount: payPriceNaira,
     currency,

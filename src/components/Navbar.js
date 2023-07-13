@@ -25,9 +25,10 @@ const shouldChange=scroll > 10
   return (
     <div className={` w-[100vw] md:w-full fixed top-0 h-[90px] z-30  ${shouldChange ? 'bg-black' : 'bg-[#00000018]'} `}>
       <div className='max-w-[1240px] md:mx-auto mx-3  flex justify-between items-center h-full '>
-        <div >
+        <div>
           <Link to="/">
-          <img src={logo} className=' h-[4em] w-fit rounded-md'></img>
+          {/* <img src={logo} className=' h-[4em] w-fit rounded-md'></img> */}
+      <h1 className='text-white text-5xl'>    ZIMS</h1>
           </Link>
          
         </div>
@@ -37,8 +38,8 @@ const shouldChange=scroll > 10
             <li className='p-4'><Link to='/animals'>Animals</Link></li>
             <li className='p-4'><Link to='/about'>Abouts</Link></li>
             <li className='p-4'><Link to='/contact'>Contact Us</Link></li>
-            <button className='ml-4 py-[10px] px-7 bg-white text-black'><Link to='/verify'>Login</Link></button>
-            <button className='ml-4 py-[10px] px-7 bg-indigo-800'><Link to='/signup'>Sign Up</Link></button>
+            {/* <button className='ml-4 py-[10px] px-7 bg-white text-black'><Link to='/verify'>Login</Link></button> */}
+            {/* <button className='ml-4 py-[10px] px-7 bg-indigo-800'><Link to='/signup'>Sign Up</Link></button> */}
 
           </ul>
         </div>
@@ -57,8 +58,8 @@ const shouldChange=scroll > 10
             <li className='text-xl p-4'><Link to='/about'>Abouts</Link></li>
             <li className='text-xl p-4'><Link to='/contact'>Contact Us</Link></li>
             <div className='flex flex-col gap-3 mb-5'>
-            <button className=' bg-white text-black'><Link to='/tickets'>Login</Link></button>
-            <button className=' bg-indigo-800'><Link to='/tickets'>Sign Up</Link></button>
+            {/* <button className=' bg-white text-black'><Link to='/tickets'>Login</Link></button> */}
+            {/* <button className=' bg-indigo-800'><Link to='/tickets'>Sign Up</Link></button> */}
             </div>
             
 

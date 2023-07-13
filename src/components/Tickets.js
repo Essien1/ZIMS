@@ -51,7 +51,7 @@ const Tickets = () => {
         </p>
         <div className="py-4 flex gap-7  items-center">
           <button
-           className="bg-orange-500 text-white py-4 font-bold px-11"
+           className="bg-orange-500  text-white py-4 font-bold px-11"
             onClick={() => {
               setCurrency('NGN')
               setModal(true)}}>

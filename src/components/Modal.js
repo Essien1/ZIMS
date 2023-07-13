@@ -214,9 +214,9 @@ const date=new Date()
     <div
       onClick={handleOnClose}
       id="container"
-      className="fixed top-[5em] inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center z-[10] "
+      className="fixed top-[5em] inset-0 bg-black bg-opacity-80 backdrop-blur-sm flex justify-center items-center z-[10] "
     >
-      <div className=" h-[550px] w-[350px] md:max-h-[640px] md:w-[600px]  bg-white p-5 text-black place-items-center rounded-xl ">
+      <div className="relative h-[550px] w-[350px] md:max-h-[640px] md:w-[600px]  bg-white p-5 text-black place-items-center rounded-xl ">
       <form onSubmit={(e)=>e.preventDefault()}  className='flex flex-col h-[460px]  overflow-scroll overflow-x-hidden'>
         <button 
         onClick={()=>{
@@ -224,17 +224,17 @@ const date=new Date()
         // console.log(3)
         }
         }
-        className=" h-fit w-fit  rounded-full px-6 fixed  top-3 right-3
-         font-[500] text-[1.4em] font-mono text-white py-4">x</button>
+        className=" h-[50px] w-fit  rounded-full px-4 absolute  top-[.1em] right-[.1em] border border-b-4 opacity-70 cursor-pointer hover:opacity-100 
+            font-[500] text-[1.4em] font-mono text-white py-2">x</button>
 
             <label  className='pt-4' >Full Name</label>
-            <input value={name} onChange={(e)=>setName(e.target.value)} className='rounded-lg  h-12 bg-[#e9e9e9] p-2' type='text' placeholder="Full Name" name=" your name"></input>
+            <input required value={name} onChange={(e)=>setName(e.target.value)} className='rounded-lg  h-12 bg-[#e9e9e9] p-2' type='text' placeholder="Full Name" name=" your name"></input>
             <label className='pt-4' >Email</label>
 
-            <input value={email} onChange={(e)=>setEmail(e.target.value)} className='rounded-lg h-12 bg-[#e9e9e9] p-2' type='email' placeholder="email" name="email"></input>
+            <input required value={email} onChange={(e)=>setEmail(e.target.value)} className='rounded-lg h-12 bg-[#e9e9e9] p-2' type='email' placeholder="email" name="email"></input>
 
             <label className='pt-4' >Phone No</label>
-            <input value={phoneNumber} onChange={(e)=>setPhonenumber(e.target.value)} className='rounded-lg h-12 bg-[#e9e9e9] p-2' type='tel' placeholder="phone no" name="Phone no"></input>
+            <input required value={phoneNumber} onChange={(e)=>setPhonenumber(e.target.value)} className='rounded-lg h-12 bg-[#e9e9e9] p-2' type='tel' placeholder="phone no" name="Phone no"></input>
 
             <label className='pt-4 pb-4'  for="cars">Select Ticket type</label>
 
@@ -313,7 +313,7 @@ const date=new Date()
                  <p>
                   
                  {currency==="NGN"?
-                <p>
+                <p className="text-[.6em] font-bold">
                   {counterN} Ticket(s) added
                 </p>
                 :

@@ -49,7 +49,7 @@ const NormalTicket = () => {
               <td className="text-md px-6 py-3">NGN</td>
             </tr>
             <tr className="border-b border-gray-300 items-center">
-              <td className="text-md px-6 py-3">23430998</td>
+              <td className="text-md px-6 py-3">23w430998</td>
               <td className="text-md px-6 py-3">Micheal Mark </td>
               <td className="text-md px-6 py-3">Weekday Foreigner Adult</td>
               <td className="text-md px-6 py-3">$30</td>

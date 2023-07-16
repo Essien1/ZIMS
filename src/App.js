@@ -3,7 +3,7 @@ import Home from "./routes/Home";
 import Animals from "./routes/Animals";
 import Contact from "./routes/Contact";
 import About from "./routes/About";
-import Ticket from "./routes/Ticket";
+import Ticket from "./routes/ticket";
 import Plan from "./routes/Plan";
 import Park from "./routes/Park";
 import Admin from "./routes/Admin";

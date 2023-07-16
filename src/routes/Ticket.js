@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import HeroImage from '../components/HeroImage'
-import Tickets from '../components/Tickets'
+import Tickets from '../components/tickets'
 import Admission from '../components/Admission'
 
 

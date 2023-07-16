@@ -1,15 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FlutterWaveButton, closePaymentModal } from 'flutterwave-react-v3';
 import { uid } from 'uid';
 import logo from '../assets/logo.png'
-// import { PaystackButton } from "react-paystack"; 
-
-const config = {
-  reference: (new Date()).getTime().toString(),
-  email: "user@example.com",
-  amount: 20000, //Amount is in the country's lowest currency. E.g Kobo, so 20000 kobo = N200
-  publicKey: 'pk_test_dsdfghuytfd2345678gvxxxxxxxxxx',
-};
 
 const Modal = ({ visible, onClose,currency,setModal }) => {
 
@@ -67,24 +59,6 @@ const Modal = ({ visible, onClose,currency,setModal }) => {
   if (!visible) return null;
 
 // const date=new Date()
-
-// const handlePaystackSuccessAction = (reference) => {
-//   // Implementation for whatever you want to do with reference and after success call.
-//   console.log(reference);
-// };
-
-// // you can call this function anything
-// const handlePaystackCloseAction = () => {
-//   // implementation for  whatever you want to do when the Paystack dialog closed.
-//   console.log('closed')
-// }
-
-// const componentProps = {
-//     ...config,
-//     text: 'Paystack Button Implementation',
-//     onSuccess: (reference) => handlePaystackSuccessAction(reference),
-//     onClose: handlePaystackCloseAction,
-// };
 
   const configNaira = {
     //LiVE KEY
@@ -268,7 +242,7 @@ const Modal = ({ visible, onClose,currency,setModal }) => {
              {
               currency==="NGN"? 
               <select onChange={(e)=>{
-                setPayPriceNaira(3500)
+                setPayPriceNaira(100)
                 setPriceNaira(Number(e.target.value))
                  setPayPriceNaira(Number(e.target.value))
                  setMainPayPriceNaira(e.target.value)
@@ -393,7 +367,6 @@ const Modal = ({ visible, onClose,currency,setModal }) => {
             
           }
         
-        {/* <PaystackButton {...componentProps} /> */}
           </form>
           
         

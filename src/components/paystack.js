@@ -32,3 +32,72 @@ return (
 }
 
 export default Paystack
+
+
+
+// function payWithPaystack(e) {
+// //    e.preventDefault();
+//     let email = document.getElementById("email-address").value;
+//     let key = document.getElementById("key").value;
+//     let base_amount = document.getElementById("base-amount").value;
+//     let amount = document.getElementById("ngn-amount").value;
+//     amount = amount.split(/\s+/).slice(-1)[0].split(/[₦,]/g).join("")
+//     amount = parseInt(parseFloat(amount) * 100);
+//     let source = document.getElementById("referer").value;
+//     let type = document.getElementById("type").value;
+//     let element = document.getElementById("element").value;
+//     let extra = document.getElementById("extra").value;
+//     const code = [...Array(7)].map(() => Math.random().toString(36)[2]).join('');
+//     let reference = `pst-${code}`;
+
+//     let handler = PaystackPop.setup({
+
+//     key: key,
+//     email: email,
+//     amount: amount,
+//     ref: reference,
+//     // label: "Optional string that replaces customer email"
+//     onClose: function(){
+//       alerT('Window closed', red);
+//     },
+//     callback: function(response){
+//       alerT('Please wait while we confirm the transaction.', 'purple');
+//       countDown(secs=30);
+//       let log_data = {'source': source, 'email': email, 'type': type, 'price': base_amount,
+//       'element': element, 'reference': response.reference, 'extra': extra}
+//       verifyPaystackTransaction(reference, log_data)
+
+// //      alerT(message);
+
+//     }
+//   });
+
+//   handler.openIframe();
+// }
+
+
+// function verifyPaystackTransaction(reference, log_data) {
+// //  const amount = 517650; // replace with actual amount
+//   const url = `paystack/find/${reference}/`;
+
+//   fetch(url)
+//     .then(response => response.json())
+//     .then(data => {
+//       counter.style.display = 'none';
+//       const message = data.message;
+
+//       if (data.success === true) {
+// //        alerT(message);
+//         logPayment(log_data);
+//       } else {
+//         alerT(message, 'maroon');
+//       }
+//     })
+//     .catch(error => {
+//         counter.style.display = 'none';
+//         console.error(error);
+//         alerT('Network error. We could not validate your transaction. Contact us or try again.', 'maroon');
+//         });
+// }
+
+

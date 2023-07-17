@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Modal from "./modal";
+import Modal from "./Modal";
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
 import env from "react-dotenv";
 import Paystack from "./paystack";

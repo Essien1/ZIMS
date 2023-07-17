@@ -242,13 +242,13 @@ const Modal = ({ visible, onClose,currency,setModal }) => {
              {
               currency==="NGN"? 
               <select onChange={(e)=>{
-                setPayPriceNaira(100)
+                setPayPriceNaira(3500)
                 setPriceNaira(Number(e.target.value))
                  setPayPriceNaira(Number(e.target.value))
                  setMainPayPriceNaira(e.target.value)
                }} className="bg-[#e9e9e9] h-11 p-2 " name="cars" id="cars">
   
-                  <option value={100} ><p className="text-[1.1rem]">Weekday-Senior (51-62+) - ₦100</p></option>
+                  <option value={3500} ><p className="text-[1.1rem]">Weekday-Senior (51-62+) - ₦3500</p></option>
                   <option value={4000}><p className="text-[1.1rem]">Weekday-Adult (18-50) - ₦4000</p> </option>
                   <option value={2500}><p className="text-[1.1rem]">Weekday-Child (4-17) - ₦2500</p></option>
                   <option  value={3000}><p className="text-[1.1rem]">Weekend-Senior (51-62+) - ₦3000</p></option>

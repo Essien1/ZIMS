@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Tickets from "./tickets";
+import Tickets from "./Tickets";
 
 const PlanAdeventure = () => {
   return (
